@@ -8,6 +8,7 @@
   --color-shadow: rgba(0, 0, 0, 0.1);
   --color-bg-marquee: #eee;
   --color-text-marquee: #7c7c7c;
+  --color-titles: #333;
 }
 
 /* general */
@@ -366,6 +367,7 @@ body {
   color: var(--color-primary);
   white-space: nowrap;
   background-color: var(--color-secondary);
+  border-radius: 1rem;
   text-transform: uppercase;
   padding: 0.5rem;
   margin-right: 1rem;
@@ -499,6 +501,174 @@ body {
 
 .layout__highlights {
   grid-area: high;
+  margin-bottom: 3rem;
+}
+
+.highlights__posts {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.hightlights__post {
+  flex-basis: 33%;
+  height: 100%;
+  border-bottom: 1px solid var(--color-bg-marquee);
+}
+
+.highlights__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.highlights__img {
+  transition: all 200ms ease-in-out;
+}
+
+.highlights__img:hover {
+  transform: scale(1.1);
+}
+
+.highlights__category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.highlights__category:hover {
+  background-color: var(--color-bg-navbar);
+}
+
+.highlights__name-category {
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.highlights__title {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.highlights__title:hover > .highlights__link {
+  color: var(--color-secondary);
+}
+
+.highlights__link {
+  color: var(--color-titles);
+  transition: all 200ms ease-in-out;
+}
+
+.highlights__meta {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.highlights__author {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+.highlights__date {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.highlights__description {
+  color: var(--color-titles);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.highlights__footer-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.footer-post__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.footer-post__views,
+.footer-post__comment {
+  font-weight: 400;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: var(--color-text-marquee);
+}
+
+.footer-post__views > .fa-solid,
+.footer-post__comment > .fa-solid {
+  margin-right: 0.5rem;
+}
+
+.footer-post__comment > a {
+  display: inline;
+}
+
+.footer-post__read-more {
+  border: 1px solid var(--color-text-marquee);
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+
+.footer-post__read-more:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* estilos sub encabezados */
+.news__subheader,
+.games__subheader,
+.login__subheader,
+.posts__subheader,
+.videos__subheader,
+.highlights__subheader,
+.last-reviews__subheader {
+  width: 100%;
+  height: 3.5rem;
+  margin-bottom: 3rem;
+  background-color: var(--color-bg-navbar);
+  padding: 0.5rem;
+}
+
+.subheader__title,
+.news__title,
+.list-header__title,
+.last-review__title {
+  display: inline;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  padding: 0.5rem;
+  text-transform: uppercase;
+  background-color: var(--color-secondary);
+  border-radius: 1rem;
+  white-space: nowrap;
 }
 
 /* estilos videos */
