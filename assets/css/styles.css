@@ -301,7 +301,8 @@ body {
 }
 
 .container-rating__border,
-.rating__border {
+.rating__border,
+.circle__border {
   width: 100%;
   height: 100%;
   border-radius: 3.2rem;
@@ -312,7 +313,8 @@ body {
 }
 
 .container-rating__mark,
-.rating__mark {
+.rating__mark,
+.circle__mark {
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-primary);
@@ -781,6 +783,77 @@ body {
 
 .layout__carousel-games {
   grid-area: carousel;
+  width: 100%;
+  margin-bottom: 6rem;
+  padding: 3rem;
+  background-color: var(--color-bg-navbar);
+}
+
+.carousel-games__list {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}
+
+.carousel-games__item {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-games__img {
+  width: 100%;
+}
+
+.carousel-games__rating {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.carousel-games__info {
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  padding: 0 1rem;
+  transition: all 200ms ease-in-out;
+}
+
+.carousel-games__category {
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 3px var(--color-titles);
+  color: var(--color-primary);
+  transition: all 200ms ease-in-out;
+}
+
+.carousel-games__category:hover {
+  color: var(--color-secondary);
+}
+
+.carousel-games__line {
+  width: 5rem;
+  height: 0.3rem;
+  margin: 0.4rem auto;
+  background-color: var(--color-secondary);
+}
+
+.carousel-games__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px var(--color-titles);
+  margin-bottom: 1rem;
+  transition: all 200ms ease-in-out;
+}
+
+.carousel-games__link {
+  color: var(--color-primary);
+  transition: all 200ms ease-in-out;
+}
+
+.carousel-games__title:hover > .carousel-games__link {
+  transform: scale(1.1);
 }
 
 /* estilos main */
