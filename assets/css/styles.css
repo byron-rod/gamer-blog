@@ -506,33 +506,40 @@ body {
   margin-bottom: 3rem;
 }
 
-.highlights__posts {
+.highlights__posts,
+.posts__container {
   width: 100%;
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 
-.hightlights__post {
+.hightlights__post,
+.posts__post {
   flex-basis: 33%;
   height: 100%;
   border-bottom: 1px solid var(--color-bg-marquee);
 }
 
-.highlights__image {
+.highlights__image,
+.posts__container-img {
   position: relative;
   overflow: hidden;
 }
 
-.highlights__img {
+.highlights__img,
+.post__img {
   transition: all 200ms ease-in-out;
 }
 
-.highlights__img:hover {
+.highlights__img:hover,
+.post__img:hover {
   transform: scale(1.1);
 }
 
-.highlights__category {
+.highlights__category,
+.game__conatiner-category,
+.post__container-category {
   position: absolute;
   top: 0;
   left: 0;
@@ -544,33 +551,40 @@ body {
   text-transform: uppercase;
 }
 
-.highlights__category:hover {
+.highlights__category:hover,
+.game__conatiner-category:hover,
+.post__container-category:hover {
   background-color: var(--color-bg-navbar);
 }
 
-.highlights__name-category {
+.highlights__name-category,
+.post__category {
   font-weight: 400;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
 
-.highlights__title {
+.highlights__title,
+.post__title {
   font-size: 1.9rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
-.highlights__title:hover > .highlights__link {
+.highlights__title:hover > .highlights__link,
+.post__title:hover > .post__link {
   color: var(--color-secondary);
 }
 
-.highlights__link {
+.highlights__link,
+.post__link {
   color: var(--color-titles);
   transition: all 200ms ease-in-out;
 }
 
-.highlights__meta {
+.highlights__meta,
+.post__meta {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -582,7 +596,8 @@ body {
 .main-video__author,
 .video__author,
 .main-post__container-author,
-.news__author {
+.news__author,
+.post__author {
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--color-secondary);
@@ -593,20 +608,23 @@ body {
 .main-video__date,
 .video__date,
 .main-post__date,
-.news__date {
+.news__date,
+.post__date {
   font-size: 1.1rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .highlights__description,
-.main-post__description {
+.main-post__description,
+.post__description {
   color: var(--color-titles);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.highlights__footer-post {
+.highlights__footer-post,
+.post__footer-post {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -627,7 +645,8 @@ body {
 .main-video__views,
 .main-video__comments,
 .main-post__views,
-.main-post__comments {
+.main-post__comments,
+.footer-post__comments {
   font-weight: 400;
   display: inline-block;
   font-size: 1.3rem;
@@ -646,7 +665,8 @@ body {
 }
 
 .footer-post__read-more,
-.main-post__read-more {
+.main-post__read-more,
+.post__btn-read-more {
   border: 1px solid var(--color-text-marquee);
   font-weight: 400;
   font-size: 1.3rem;
@@ -655,7 +675,8 @@ body {
 }
 
 .footer-post__read-more:hover,
-.main-post__read-more:hover {
+.main-post__read-more:hover,
+.post__btn-read-more:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
@@ -1017,6 +1038,99 @@ body {
 .news__data {
   justify-content: left;
   gap: 1rem;
+}
+
+/* seccion juegos */
+.main__games {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.games__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.games__game {
+  position: relative;
+  flex-basis: calc(50% - 3rem);
+}
+
+.game__container-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.game__img {
+  width: 100%;
+  height: 20rem;
+  transition: all 200ms ease-in-out;
+}
+
+.game__img:hover {
+  transform: scale(1.1);
+}
+
+.game__rating {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.game__details {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  color: var(--color-primary);
+}
+
+.game__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* seccion ultimos articulos */
+
+.main__posts {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.post__list-header {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.list-header--smal {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.post__container-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.posts__container {
+  flex-wrap: wrap;
+}
+
+.posts__post {
+  flex-basis: calc(50% - 2rem);
+  margin-bottom: 3rem;
+  height: 100%;
 }
 
 /* estilos aside */
