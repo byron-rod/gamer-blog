@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="/assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
     />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <script src="/assets/js/main.js" defer></script>
     <script src="/assets/js/marquee.js" defer></script>
@@ -38,6 +39,69 @@
       <!-- navegacion -->
       <section class="layout__nav">
         <nav class="nav__navbar">
+          <!-- boton menu responsive -->
+          <div class="navbar__mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- menu responsive -->
+          <ul class="navbar__mobile-list">
+            <!-- elemento con submenu -->
+            <li class="mobile-list__item">
+              <div class="mobile-list__container">
+                <a href="#" class="mobile-list__link">Noticias</a>
+                <div class="mobile-list__icon" id="icon1">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <ul class="mobile-list__submenu" id="submenu1">
+                <li class="mobile-submenu__item">
+                  <a href="#" class="mobile-submenu__link">Videojuegos</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a href="#" class="mobile-submenu__link">Cine</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a href="#" class="mobile-submenu__link">Tecnologia</a>
+                </li>
+              </ul>
+            </li>
+            <!-- elemento sin sub -->
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Analisis</a>
+            </li>
+            <!-- elemento sin sub -->
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Juegos</a>
+            </li>
+            <!-- elemento con submenu -->
+            <li class="mobile-list__item">
+              <div class="mobile-list__container">
+                <a href="#" class="mobile-list__link">Categorias</a>
+                <div class="mobile-list__icon" id="icon1">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <ul class="mobile-list__submenu" id="submenu2">
+                <li class="mobile-submenu__item">
+                  <a href="#" class="mobile-submenu__link">Accion</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a href="#" class="mobile-submenu__link">RPG</a>
+                </li>
+                <li class="mobile-submenu__item">
+                  <a href="#" class="mobile-submenu__link"
+                    >First Person Shooter</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- elemento sin sub -->
+            <li class="mobile-list__item">
+              <a href="#" class="mobile-list__link">Ranking</a>
+            </li>
+          </ul>
+
+          <!-- navecion escritorio -->
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="#" class="navbar__link">Noticias</a>
