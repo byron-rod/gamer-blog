@@ -120,7 +120,7 @@ body {
 }
 
 .search__input {
-  width: 20rem;
+  width: 0rem;
   height: 5rem;
   font-size: 1.6rem;
   background-color: var(--color-secondary);
@@ -128,7 +128,6 @@ body {
   outline: none;
   border: none;
   transition: all 200ms ease-in-out;
-  display: none;
 }
 
 .search__input::placeholder {
